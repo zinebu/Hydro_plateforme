@@ -1,0 +1,6 @@
+# Python venv
+.venv/
+
+# Django stuff
+__pycache__/
+*.pyc
