@@ -1,0 +1,9 @@
+{
+  "/hubeau": {
+    "target": "https://hubeau.eaufrance.fr",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": { "^/hubeau": "" },
+    "logLevel": "debug"
+  }
+}
