@@ -2,6 +2,9 @@
   command = "npm ci && npm run build"
   publish = "dist/frontend"
 
+[build.environment]
+  NODE_VERSION = "20.19.0"      
+  
 [[redirects]]
   from = "/*"
   to = "/index.html"
