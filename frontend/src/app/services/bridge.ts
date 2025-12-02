@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class BridgesService {
-  private base = 'https://slim-songs-arctic-fathers.trycloudflare.com/api/bridges/'; 
+  private base = 'https://saves-loose-yourself-notified.trycloudflare.com/api/bridges/'; 
 
   constructor(private http: HttpClient) {}
 
