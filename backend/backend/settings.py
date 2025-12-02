@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-yht)*^y9u0711=39al0*ecyl^z7&19qd_0ywy(^w+*a6gnd=!5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    ".trycloudflare.com",
+    "scintillating-starship-d762af.netlify.app",
+]
 
 # Application definition
 
@@ -45,8 +49,10 @@ INSTALLED_APPS = [
     'bridges',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
-    "http://127.0.0.1:4200",
+    "http://127.0.0.1:8000",  # tes tests locaux via navigateur
+    "http://localhost:8000",  # selon comment tu testes
+    "https://saves-loose-yourself-notified.trycloudflare.com",  # ton tunnel public
+    "https://scintillating-starship-d762af.netlify.app",    
 ]
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -58,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+      
 ]
 
 ROOT_URLCONF = 'backend.urls'
